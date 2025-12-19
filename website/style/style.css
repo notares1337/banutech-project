@@ -1,0 +1,159 @@
+/* APPLYING FONT FAMILY */
+
+@font-face {
+  font-family: "customFont";
+  src: url("../fonts/ppneuemontreal-bold.otf") format("opentype"),
+    url("../fonts/Thunder-SemiBoldHC.otf") format("opentype"),
+    url("../fonts/Thunder-MediumLC.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BASIC DEV SETUP */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1e22aa, #2e008b, #ea27c2);
+  font-family: "customFont";
+}
+
+/* NAVBAR HANDLING */
+
+.navbar h1 {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .left {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar .left img {
+  width: 3rem;
+  height: 2rem;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.navbar .right ul {
+  display: flex;
+  gap: 0.7rem;
+  list-style: none;
+  margin-right: 0.5rem;
+}
+
+.navbar a,
+.navbar a:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.navbar a:hover {
+  color: #090909;
+}
+
+/* MAIN PAGE HERE */
+
+main img {
+  width: 12rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+.container-1 {
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  margin: 2rem auto 3rem;
+}
+
+.container-2 {
+  width: 600px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+/* EVENTS PAGE HERE */
+
+.event-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 5rem auto;
+  width: 800px;
+  height: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #090909;
+}
+
+.card-image {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CREW PAGE HERE */
+
+.leader-photo,
+.member-photo {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.leader-photo {
+  margin: 3rem auto;
+}
+
+main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
